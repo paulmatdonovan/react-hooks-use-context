@@ -6,7 +6,7 @@ import { UserContext } from "../context/user";
 
 
 function Header({ theme, setTheme }) {
-  const user = useContext(UserContext)
+  const { user, setUser } = useContext(UserContext)
 
   function handleLogin() {
     if (user) {
